@@ -18,6 +18,10 @@ library(bslib)
 library(bsicons)
 library(Minirand)
 
+options(
+  spinner.type = 6
+)
+
 shiny_files <- list.files(
   path = 'R',
   pattern = '\\.R$',

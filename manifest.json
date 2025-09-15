@@ -4285,13 +4285,13 @@
   },
   "files": {
     "app.R": {
-      "checksum": "b1928c9d1ab4662eb4a9256bf609b2ab"
+      "checksum": "cec3a1bbd16e730fc7be1527642be586"
     },
     "app_server.R": {
-      "checksum": "54d3f30cae050c8bdb10cdea160078d4"
+      "checksum": "93713337ef615b06d26fb13eda09fb10"
     },
     "app_ui.R": {
-      "checksum": "3bcfd0236972c07129b640a929c8a5cd"
+      "checksum": "25d55ca631c0402ede97d8a13471f25b"
     },
     "R/fun/get_db.R": {
       "checksum": "d1c2889f9b75fc595342ed69b8d583de"
@@ -4351,7 +4351,7 @@
       "checksum": "fb11806e62ed345b017c523ef923339e"
     },
     "R/ui/ui_settings.R": {
-      "checksum": "2d297c4333cb27756b45d15efad61b10"
+      "checksum": "80aeca5e9e5b81af513f5a1572676459"
     },
     "www/about.md": {
       "checksum": "0746dce07ae9918ad2cdc241cfb03c43"

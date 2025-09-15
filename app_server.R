@@ -1,11 +1,5 @@
 server <- function(input, output, session) {
   
-  show_spinner(
-    spin_id = "busy_full"
-  )
-  
-  hide_panels_on_start()
-  
   # загрузить таблицу пользователей
   user_base <- dbReadTable(
     conn = pool,
@@ -45,7 +39,26 @@ server <- function(input, output, session) {
       condition = !is_auth
     )
     
-    show_panels_on_auth(is_admin = is_admin)
+    nav_insert(
+      id = "main_bar",
+      nav = panel_randomize_patient,
+      target = "about",
+      select = TRUE
+    )
+    
+    nav_insert(
+      id = "main_bar",
+      nav = panel_patients_db,
+      target = "randomize_patient"
+    )
+    
+    if (is_admin) {
+      nav_insert(
+        id = "main_bar",
+        nav = panel_stat,
+        target = "patients_db"
+      )
+    }
   })
   
   # выход из приложения
@@ -62,10 +75,6 @@ server <- function(input, output, session) {
   logout_init <- reactive({
     if (req(input$exit_confirm)) TRUE
   })
-  
-  hide_spinner(
-    spin_id = "busy_full"
-  )
   
   # рандомизировать нового пациента
   newPatientInfoServer(auth)

@@ -21,15 +21,6 @@ ui <- page_navbar(
   # о приложении
   panel_about,
   
-  # рандомизация пациента
-  panel_randomize_patient,
-  
-  # база данных рандомизированных пациентов
-  panel_patients_db,
-  
-  # статистика
-  panel_stat,
-  
   nav_spacer(),
   
   # авторизация
@@ -37,5 +28,4 @@ ui <- page_navbar(
   
   # кнопки авторизации и выхода
   panel_login_buttons
-  
 )
