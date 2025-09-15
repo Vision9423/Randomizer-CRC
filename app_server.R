@@ -1,5 +1,9 @@
 server <- function(input, output, session) {
   
+  show_spinner(
+    spin_id = "busy_full"
+  )
+  
   hide_panels_on_start()
   
   # загрузить таблицу пользователей
@@ -58,6 +62,10 @@ server <- function(input, output, session) {
   logout_init <- reactive({
     if (req(input$exit_confirm)) TRUE
   })
+  
+  hide_spinner(
+    spin_id = "busy_full"
+  )
   
   # рандомизировать нового пациента
   newPatientInfoServer(auth)
