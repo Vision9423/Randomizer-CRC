@@ -18,21 +18,27 @@ statUI <- function() {
     nav_panel(
       title = "Общая информация",
       value = "common_stat",
-      uiOutput(ns('patients_num'))
+      withSpinner(
+        uiOutput(ns('patients_num'))
+      )
     ),
     
     
     nav_panel(
       title = "Статистика по группе",
       value = "stat_by_treatment",
-      uiOutput(ns('stat_by_treatment'))
+      withSpinner(
+        uiOutput(ns('stat_by_treatment'))
+      )
     ),
     
     
     nav_panel(
       title = "Статистика по центру",
       value = "stat_by_center",
-      uiOutput(ns('stat_by_center'))
+      withSpinner(
+        uiOutput(ns('stat_by_center'))
+      )
     )
   )
   
@@ -158,6 +164,9 @@ statServer <- function(auth) {
           type = list(
             age ~ "continuous",
             fong ~ "continuous"
+          ),
+          digits = list(
+            age = 1
           )
         ) %>%
         add_overall(
@@ -189,6 +198,9 @@ statServer <- function(auth) {
           type = list(
             age ~ "continuous",
             fong ~ "continuous"
+          ),
+          digits = list(
+            age = 1
           )
         ) %>%
         modify_header(label = "**Показатель**") %>% 

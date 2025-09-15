@@ -3499,6 +3499,37 @@
         "Built": "R 4.5.1; ; 2025-08-20 02:30:12 UTC; windows"
       }
     },
+    "shinycssloaders": {
+      "Source": "CRAN",
+      "Repository": "https://mirror.truenetwork.ru/CRAN",
+      "description": {
+        "Package": "shinycssloaders",
+        "Title": "Add Loading Animations to a 'shiny' Output While It's\nRecalculating",
+        "Version": "1.1.0",
+        "Authors@R": "c(\n    person(\"Dean\",\"Attali\",email=\"daattali@gmail.com\",role=c(\"aut\",\"cre\"),\n        comment = c(\"Maintainer/developer of shinycssloaders since 2019\", ORCID=\"0000-0002-5645-3493\")),\n    person(\"Andras\",\"Sali\",email=\"andras.sali@alphacruncher.hu\",role=c(\"aut\"),comment=\"Original creator of shinycssloaders package\"),\n    person(\"Luke\",\"Hass\",role=c(\"ctb\",\"cph\"),comment=\"Author of included CSS loader code\")\n    )",
+        "Description": "When a 'Shiny' output (such as a plot, table, map, etc.) is recalculating, it remains \n    visible but gets greyed out. Using 'shinycssloaders', you can add a loading animation (\"spinner\")\n    to outputs instead. By wrapping a 'Shiny' output in 'withSpinner()', a spinner will automatically\n    appear while the output is recalculating. You can also manually show and hide the spinner, or add\n    a full-page spinner to cover the entire page.\n    See the demo online at <https://daattali.com/shiny/shinycssloaders-demo/>.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/daattali/shinycssloaders,\nhttps://daattali.com/shiny/shinycssloaders-demo/",
+        "BugReports": "https://github.com/daattali/shinycssloaders/issues",
+        "Depends": "R (>= 3.1)",
+        "Imports": "digest, glue, grDevices, htmltools (>= 0.3.5), shiny",
+        "Suggests": "knitr, shinydisconnect, shinyjs",
+        "RoxygenNote": "7.2.3",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-07-30 18:52:48 UTC; Dean",
+        "Author": "Dean Attali [aut, cre] (Maintainer/developer of shinycssloaders since\n    2019, <https://orcid.org/0000-0002-5645-3493>),\n  Andras Sali [aut] (Original creator of shinycssloaders package),\n  Luke Hass [ctb, cph] (Author of included CSS loader code)",
+        "Maintainer": "Dean Attali <daattali@gmail.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-07-30 22:30:02 UTC",
+        "Built": "R 4.5.1; ; 2025-09-08 02:04:04 UTC; windows",
+        "RemoteType": "standard",
+        "RemotePkgRef": "shinycssloaders",
+        "RemoteRef": "shinycssloaders",
+        "RemoteRepos": "https://mirror.truenetwork.ru/CRAN",
+        "RemoteSha": "1.1.0"
+      }
+    },
     "shinyjs": {
       "Source": "CRAN",
       "Repository": "https://mirror.truenetwork.ru/CRAN",
@@ -4254,13 +4285,13 @@
   },
   "files": {
     "app.R": {
-      "checksum": "feb0d7ec97f4b3bee3c4343f33b02804"
+      "checksum": "b1928c9d1ab4662eb4a9256bf609b2ab"
     },
     "app_server.R": {
       "checksum": "54d3f30cae050c8bdb10cdea160078d4"
     },
     "app_ui.R": {
-      "checksum": "5fa6bea3c0f1bf5ed578a1b904886f14"
+      "checksum": "3bcfd0236972c07129b640a929c8a5cd"
     },
     "R/fun/get_db.R": {
       "checksum": "d1c2889f9b75fc595342ed69b8d583de"
@@ -4275,10 +4306,10 @@
       "checksum": "56ed86b759a5408e50c5bdd281f570f0"
     },
     "R/fun/pool.R": {
-      "checksum": "90bd57a5c20099fd1b0bbcd474d405d6"
+      "checksum": "e254fd4580e87b30a8c26a0432e3c34b"
     },
     "R/fun/randomize_patient.R": {
-      "checksum": "3e835326a5833b6b6ffca2ab54a0d10e"
+      "checksum": "b910c593f436c1947a89f9c0501c3151"
     },
     "R/fun/reset_patient_info.R": {
       "checksum": "da03c16e680acbca569be32382577bab"
@@ -4293,10 +4324,10 @@
       "checksum": "851d716525ad8a74d1eac084604a9d66"
     },
     "R/module/patients_db.R": {
-      "checksum": "c0ba1c514171f45853c6a4f1426784c6"
+      "checksum": "2b4010bc2762ca32cb6b27aa38c2e802"
     },
     "R/module/stat.R": {
-      "checksum": "73d91bc4915e12c54cf9a571ee166e3f"
+      "checksum": "3336709035c415cd023798444800738d"
     },
     "R/ui/panels/about.R": {
       "checksum": "6cfac5e4f732e6db9cb713af2ae06806"
@@ -4320,22 +4351,22 @@
       "checksum": "fb11806e62ed345b017c523ef923339e"
     },
     "R/ui/ui_settings.R": {
-      "checksum": "5b748df76150948dcbf1b3df6accce82"
+      "checksum": "2d297c4333cb27756b45d15efad61b10"
     },
     "www/about.md": {
       "checksum": "0746dce07ae9918ad2cdc241cfb03c43"
     },
     "www/logo_blokhin.png": {
-      "checksum": "ce69c48fc924fdc1c74d2264ea16f6b5"
+      "checksum": "704c70329e5d1015fabc0692b58d7860"
     },
     "www/logo_hertsen.png": {
-      "checksum": "e0d122e9705e11e4853559e461990637"
+      "checksum": "eb690050215832f5a74633eebf0b72a9"
     },
     "www/logo_kommun.png": {
-      "checksum": "4353659bd6c3503dfb4981c075d24e6d"
+      "checksum": "20b0dff5e6baeb68463dc701f3e0dd35"
     },
     "www/logo_yudin.png": {
-      "checksum": "0e11bc2cf20a6e2eb8662531cf8fca12"
+      "checksum": "407dd397c810e753e7a90a6e6b2a79c2"
     }
   },
   "users": null

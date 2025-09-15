@@ -1,9 +1,14 @@
 patientsDBUI <- function(id) {
   ns <- NS(id)
   
-  uiOutput(
-    outputId = ns("patients_db")
-  )
+  div(
+    withSpinner(
+      DTOutput(
+        outputId = ns("patientsDT")
+      )
+    ),
+    style = "height:auto; overflow-y: scroll;",
+    )
   
 }
 
@@ -54,7 +59,7 @@ patientsDBServer <- function(id, data, auth) {
         get_ru_colnames(patientsDB_shiny())
       })
       
-      patientsDT <- renderDT(
+      output$patientsDT <- renderDT(
         datatable(
           patientsDB_shiny(),
           colnames = patientsDB_colnames(),
@@ -104,13 +109,6 @@ patientsDBServer <- function(id, data, auth) {
           )
       )
       
-      
-      output$patients_db <- renderUI({
-        div(
-          patientsDT,
-          style = "height:auto; overflow-y: scroll;",
-        )
-      })
       
     }
   )

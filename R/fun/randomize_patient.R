@@ -136,7 +136,12 @@ renderUI_randomizationResult <- function(data, treatment) {
 randomizePatientServer <- function(data) {
   
   # рандомизировать пациента и занести его в БД
+  show_modal_spinner(
+    spin = "fingerprint",
+    text = "Подождите, идет процесс рандомизации..."
+  )
   treatment <- randomize_patient(data)
+  remove_modal_spinner()
   
   showModal(modalDialog(
     title = 'Пациент успешно рандомизирован и добавлен в базу данных',

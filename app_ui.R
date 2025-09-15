@@ -11,8 +11,6 @@ ui <- page_navbar(
   theme = bs_theme(
     version = 5,
     bootswatch = "flatly",
-    # primary = "#B0E0E6",
-    # secondary = "red",
     success = "#3CB371",
     base_font = font_google("Roboto")
   ),
